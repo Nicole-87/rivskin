@@ -1,0 +1,651 @@
+/*body*/
+body{
+  background-color:azure;
+  margin-top:200px;
+}
+/*end of body*/
+
+/*header*/
+header {
+    background-color: #F5DADF;
+}
+
+/*navbar*/
+.btn {
+    background-color:   #ffdddd; 
+    border-radius: 10%;
+    border-color: aliceblue;
+    border-style: outset;
+    color: #0099ff;
+    font-weight: bold; 
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .btn1 {
+    background-color:   #ffdddd; 
+    border-radius: 10%;
+    border-color: aliceblue;
+    border-style: outset;
+    color: #0099ff;
+    font-weight: bold; 
+  }
+
+  .drop {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-menu:hover {background-color: #ddd;}
+
+  .drop:hover .dropdown-menu {display: block;}
+
+  .drop:hover .btn1 {background-color: #f1f1f1;}
+
+/*end of navbar*/
+
+/*end of heade4r*/
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color:#1C4DA9;
+  text-align: center;
+  border-bottom: #88cff1 solid 2px;
+  }
+  
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    color:#1C4DA9; 
+    border-bottom: #88cff1 solid 1px;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/*jumbotron*/
+#jumbotron{
+   color: #1C4DA9;
+   text-align:center;
+}
+
+.btn2{
+   
+    background-color:   #ffdddd; 
+    border-radius: 25%;
+    border-color:aliceblue;
+    border-style: outset;
+    color: #0099ff;
+    font-weight: bold; 
+}
+.btn2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/*end of jumbotron*/
+
+/*skin at RM*/
+#home-text {
+    border: 15px solid   #88cff1;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  #rm{
+    color:#1C4DA9;
+    text-align: center;
+  }
+/*end of skin at RM*/
+
+/*instagram feed*/
+  .insta{
+    text-align: center;
+    color:#1C4DA9;
+  }
+  .iplVid{
+    border: 15px solid   #88cff1;
+    padding: 50px;
+    margin-left: 250px;
+    margin-bottom: 150px;
+    width: 600px; 
+    height: 600px;
+    align-content: center;
+  }
+/*end of instagram feed*/
+
+/*about*/
+#about{
+  text-align: center ;
+  color:#1C4DA9;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#about-p{
+  font-family:'Lucida Sans Regular';
+  font-size: medium;
+}
+
+/*carousel*/
+#carouselExampleIndicators{
+  border: 15px solid #88cff1;
+  border-radius: 15px;
+ padding: 20px;
+ margin: 50px;
+}
+/*end of carousel*/
+
+/*faq*/
+
+.faq-heading {
+  font-family: 'Times New Roman', Times, serif;   
+  font-weight: 400;
+  font-size: 19px;
+  text-indent: 20px;
+  color: #1C4DA9;
+}
+
+.faq-text {
+  font-family: Open Sans;   
+  font-weight: 400;
+  color: #4f7351;
+  width:95%;
+  padding-left:20px;
+  margin-bottom:30px;
+}
+
+.faq {
+  width: 100%;
+  height:auto;
+  margin: 50px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  border: 5px solid #88cff1;
+}
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 40px;
+  padding-top:1px;
+  background-color: #FAFAFA;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 5px;
+  height: 5px;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-right: 2px solid rgba(0, 0, 0, 0.33);
+}
+
+ .faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+ .faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgba(255,255,255,255) !important;
+  color: #4f7351;
+  height: 225px;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ .faq input[type='checkbox']:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 60px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/*end of faq*/
+/*end of about*/
+
+/*awards*/
+  .awards{
+    width: 100%;
+    height:auto;
+    text-align: center;
+    color:   #1C4DA9;
+    background-color:#F5DADF;
+  }
+
+  .obagi{
+  padding: 50px;
+  border-radius: 50%;
+  }
+
+  .aesthetic{
+    padding: 50px;
+    border-radius: 35%;
+  }
+
+  .cutera{
+    padding: 50px;
+    border-radius: 50%;
+  }
+
+  .irish{
+    padding: 50px;
+    border-radius: 50%;
+  }
+/*end of awards*/
+
+/*concerns*/
+#concerns{
+  margin-bottom: 200px;
+}
+
+#rosecea{
+border-radius: 50%;
+width:300px;
+float: left;
+padding: 10px;
+}
+
+#rosecea-text{
+margin: 50px;
+justify-content: center;
+}
+
+#pigmentation{
+  border-radius: 50%;
+  float: right;
+  width: 300px;
+  padding: 10px;
+  }
+  
+  #pigmentation-text{
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 50px;
+  }
+  #acne{
+    border-radius: 50%;
+    float: left;
+    width: 300px;
+    padding: 10px;
+    
+    }
+    
+    #acne-text{
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 50px;
+    }
+    #secretRF{
+      border-radius: 25%;
+      float: right;
+      width: 300px;
+      padding: 10px;
+      
+      }
+      
+      #acne-scarring{
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 50px;
+      }
+      #iplVid{
+        border-radius: 15%;
+        float: left;
+        width: 300px;
+        padding: 10px;
+        
+        }
+        
+        #ageing{
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 50px;
+        }
+/*end of concerns*/
+
+/*treatments*/
+
+.grad {
+  background-image: linear-gradient(#ccfbff, #ef96c5);
+}
+
+#ipl-treat{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top:50px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#ipl-txt{
+font-size: larger;
+border: solid 3px #88cff1;
+margin:10px;
+margin-left:400px;
+padding:2px;
+  }
+
+#acne-treat{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top:50px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 50%;
+  height: auto;
+  }
+
+  #acne-txt{
+font-size: larger;
+border: solid 3px #88cff1;
+margin:10px;
+margin-left:400px;
+padding:2px;
+  }
+#secretRF-treat{
+  margin: 100px;
+  margin-top:50px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 100%;
+  height:300px;
+    }
+
+    #secretRF-txt{
+font-size: larger; 
+ border: solid 3px #88cff1;
+margin:10px;
+margin-left:400px;
+padding:2px;
+    }
+
+#peel-treat{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top:50px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 50%;
+  height: auto;
+      }
+      #peel-txt{
+        font-size: larger;  
+        border: solid 3px #88cff1;
+margin:10px;
+margin-left:400px;   
+padding:2px;
+      }
+
+#ult-treat{
+  margin: 100px;
+  margin-top:50px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 100%;
+  height: 300px;
+  }
+  #ult-txt{
+    font-size: larger;
+    border: solid 3px #88cff1;
+    margin:10px;
+    margin-left:400px;  
+    padding:2px; 
+  }
+
+/*end of treatments*/
+
+/*gallery*/
+#gal{
+  margin-top: 150px;
+  margin-bottom: 250px;
+  text-align: center;
+}
+
+#before{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#after{
+  width:100%;
+  height:auto;
+    border: 2px solid #88cff1;
+    margin: 15px;
+}
+
+#before2{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#after2{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#before3{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#after3{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#before-4{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+#after4{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  border: 2px solid #88cff1;
+  margin: 15px;
+}
+
+.gal-text{
+ text-align: center; 
+ font-family: 'Times New Roman', Times, serif;
+ color: #1C4DA9;
+ font-size: 30px;
+ text-decoration: underline wavy;
+ text-decoration-thickness: 5px;
+ text-decoration-color: #F5DADF;
+}
+/*end of gallery*/
+
+/*contact*/
+#door{
+  width:100%;
+  height:auto;
+  margin-top:50px
+}
+
+#form{
+  margin-top:100px;
+margin-left: 50%;
+width :100%;
+height:auto;
+}
+
+.con-lab{
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+color: #1C4DA9;
+display: block;
+position: relative;
+overflow: hidden;
+
+height: 40px;
+padding-top:1px;
+
+}
+
+.con-in{
+background-color: #F5DADF;
+color: #1C4DA9;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+display: block;
+justify-content: center;
+}
+
+#maps{
+ margin-top:100px;
+  width:1000px; 
+  height:500px;  
+}
+/*end of contact*/
+
+/*chemical peels*/
+#peeling{
+margin-bottom:100px;
+width: 100%;
+height: auto;
+}
+/*end of chemical peels*/
+
+/*ilp*/
+#ipl-pic{
+  margin-bottom:100px;
+  width: 100%;
+  height: auto;
+  }
+/* end of ipl*/
+
+/*fraxel*/
+#fraxel-pic{
+  margin-bottom:100px;
+  width: 100%;
+  height: auto;
+  }
+/* end of fraxel*/
+
+/*ultherapy*/
+#ulther-pic{
+  margin-bottom:100px;
+  width: 100%;
+  height: auto;
+  }
+/* end of ultherapy*/
+
+/*footer*/
+
+.locations{
+  text-align: center;
+  color:#1C4DA9;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#dub{
+  text-align: center;
+  font-family:'Lucida Sans Regular';
+  font-size: medium;
+}
+
+#bel{
+  text-align: center;
+  font-family:'Lucida Sans Regular';
+  font-size: medium;
+}
+
+.footer{
+ background-image: url(images/pastel-pink.png);
+ width:100%;
+ height:auto;
+}
+
+#contact{
+text-align: left;
+}
+
+/*end of footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
